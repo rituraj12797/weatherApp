@@ -164,7 +164,7 @@
             position: relative;
             color: white;
             font-size: 2rem;
-            background-image: url(/assets/bg3.png);
+            background-image: url('./assets/bg3.png');
             overflow-y: auto;
             margin-top: -5%;
             height: 105%;
@@ -259,7 +259,7 @@
         }
 
         .levels {
-            background-image: url(/assets/background2.png);
+            background-image: url('./assets/background2.png');
             background-position: right;
             display: grid;
             padding: 1vh;
@@ -486,7 +486,7 @@
         }
 
         .sun {
-            background-image: url(./assets/sun.png);
+            background-image: url('./assets/sun.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -508,7 +508,7 @@
         }
 
         .moon {
-            background-image: url(./assets/moon.png);
+            background-image: url('./assets/moon.png');
             background-repeat: no-repeat;
             background-size: contain;
             background-position: center;
@@ -1050,11 +1050,11 @@
                         <div class="contr">
                             <div class="city"
                                 style="display: flex;justify-content:center;align-items:center ;margin-left:3px">
-                                <img src="/assets/location.png" alt="" id="location-image" style="margin-right: 5px;">
+                                <img src="./assets/location.png" alt="" id="location-image" style="margin-right: 5px;">
                                 <div class="city_text"></div>
                             </div>
                             <div class="date" style="display: flex;justify-content:center;align-items:center">
-                                <img id="calendar-image" src="/assets/calendar.png" alt="">
+                                <img id="calendar-image" src="./assets/calendar.png" alt="">
                                 <div class="datext">
                                 </div>
                             </div>
@@ -1136,7 +1136,7 @@
                         </div>
                         <div class="humidity levels-containee">
                             <div class="icondiv">
-                                <img src="/assets/humidity.png" alt="" height="100%" width="100%">
+                                <img src="./assets/humidity.png" alt="" height="100%" width="100%">
                             </div>
                             <div class="humiditytext">
                                 Humidity:</div>
@@ -1250,7 +1250,7 @@
     </div>
     <div class="location">
         <div class="location-container">
-            <img src="/assets/gps.png" alt="" id="gps">
+            <img src="./assets/gps.png" alt="" id="gps">
             <div class="wrapper_for_grant">
                 <button class="grant">Grant Acess</button>
             </div>
@@ -1376,7 +1376,7 @@
                         renderer: 'svg',
                         loop: true,
                         autoplay: true,
-                        path: `/assets/${animationPath}`
+                        path: `./assets/${animationPath}`
                     });
                 } else if (weatherType == "Mist" || weatherType == "Smoke" || weatherType == "Haze" || weatherType == "Fog") {
                     var animation3 = bodymovin.loadAnimation({
@@ -1384,7 +1384,7 @@
                         renderer: 'svg', // You can use 'canvas', 'html', or 'svg'
                         loop: true,       // Whether the animation should loop
                         autoplay: true,   // Whether the animation should play automatically
-                        path: '/assets/smaug.json' // Path to your Lottie JSON file
+                        path: './assets/smaug.json' // Path to your Lottie JSON file
                     });
                 }
                 else if (weatherType == "Dust" || weatherType == "Sand") {
@@ -1393,7 +1393,7 @@
                         renderer: 'svg', // You can use 'canvas', 'html', or 'svg'
                         loop: true,       // Whether the animation should loop
                         autoplay: true,   // Whether the animation should play automatically
-                        path: '/assets/Dust.json' // Path to your Lottie JSON file
+                        path: './assets/Dust.json' // Path to your Lottie JSON file
                     });
                 }
                 else if (weatherType == "Tornado" || weatherType == "Squall") {
@@ -1403,7 +1403,7 @@
                         loop: true,
                         speed: 0.1,
                         autoplay: true,
-                        path: '/assets/tornado.json'
+                        path: './assets/tornado.json'
                     });
                 }
             }
@@ -1424,7 +1424,7 @@
             let ite = 0
             var months = ["january", "february", "March", "Aprill", "May", "June", "July", "August", "September", "October", "November", "December"]
             var Days = ["sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-            var imageg_array = ["/assets/clearweather.png", "/assets/hazee.png", "/assets/partly-cloudy.png", "/assets/heavily-cloudy.png", "/assets/fog.png", "/assets/high winds.png", "/assets/rain.png", "/assets/thunderstorm.png"]
+            var imageg_array = ["./assets/clearweather.png", "./assets/hazee.png", "./assets/partly-cloudy.png", "./assets/heavily-cloudy.png", "./assets/fog.png", "./assets/high winds.png", "./assets/rain.png", "./assets/thunderstorm.png"]
             for (const key of Object.values(xur)) {
                 var x = document.createElement('img')
                 x.style.cssText = "width:12vh"
